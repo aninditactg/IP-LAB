@@ -1,0 +1,19 @@
+//count the number of total bit from a decimal number
+#include <stdio.h>
+int main() 
+{
+    int i,count=0;
+    scanf("%d",&i);
+    
+    while (i>0)
+    {
+        if(i%2==1)
+        {
+            count++;
+        }
+        i/=2;
+    }
+    printf("The total bit set count is %d",count);
+}
+//time complexcity o(log 2n)
+//space complexcity 0 (1)
